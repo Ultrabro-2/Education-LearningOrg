@@ -1,31 +1,26 @@
-<head>
-  <title>Math Learning</title>
-	<style>
-		body {
-		  width: 800px;
-		  font-family: sans-serif;
-		  margin: auto;
-		  color: #111111;
-		  line-height: 1.4;
-		}
-
-		a {
-		  text-decoration: none;
-		  display: block;
-		}
-		div {
-		   font-size: 8px;
-                 }	
-</style>                 
-</head>
-<body>
-
-	<h2>v86</h2>
-	<a target="_blank" href="../v86/index.html">v86</a>
-	<br>
-	<h2>enulator</h2>
-	<a target="_blank" href="../emu/index.html">emumlator</a>
-	<br>
-  
-</body>
-<img src="https://t.pimg.jp/082/530/246/1/82530246.jpg" alt="sus sus sus" width="500" height="500">
+<!DOCTYPE HTML>
+<html>
+   <body>
+      <center>
+         <input type="password" placeholder="passcode" id="tutorial">
+         <button onclick="protectpasscode()">CHECK</button>
+         <script>
+            function protectpasscode() {
+               const result = document.getElementById("tutorial").value;
+               let passcode = 1234;
+               let space = '';
+               if (result == space) {
+                  alert("Type passcode")
+               } else {
+                  if (result == passcode) {
+                     document.write("<a href="../yellow/pass.html"><img src="https://t.pimg.jp/082/530/246/1/82530246.jpg" alt="math" width="500" height="500"></a>
+");
+                  } else {
+                     alert("Incorrect Passcode");
+                     location.reload();
+                  }
+               }
+            }
+         </script>
+      </center>
+   </body>
